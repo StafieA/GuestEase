@@ -11,8 +11,6 @@ export function useCreateCabin() {
       queryClient.invalidateQueries({
         queryKey: ["cabins"],
       });
-
-      console.log("RESETTING FORM");
     },
     onError: (err) => {
       toast.error(err.message);
